@@ -1,3 +1,5 @@
-28.11.2018 Moderer - HTML Head/ header / nav / Probelinks eingefügt 
-30.11.2018 Moderer - Grid Grundgerüst (CSS,HTML) gebaut // ohne mediabox für responsive // auch wäre rechts glaube ich noch ein aside geil aber geht nicht ^^ // 
-		     Sinnlosen Text hinzugefügt & bissl Farben, dass man sich was vorstellen kann.
+28.11.2018 Moderer - HTML Head/ header / nav / Probelinks eingefÃ¼gt 
+30.11.2018 Moderer - Grid GrundgerÃ¼st (CSS,HTML) gebaut // ohne mediabox fÃ¼r responsive // auch wÃ¤re rechts glaube ich noch ein aside geil aber geht nicht ^^ // 
+		     Sinnlosen Text hinzugefÃ¼gt & bissl Farben, dass man sich was vorstellen kann.
+
+	
