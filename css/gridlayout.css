@@ -1,0 +1,48 @@
+/* CSS for Layout the Website */
+
+/* Main Grid Element */
+
+.gridlayout {
+    display: grid;
+
+    /* Vertical evenly divided */
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+
+    /* Horizontal ...... TESTEN !!!!*/
+    grid-template-rows: 200px 50px auto 100px;
+
+    /* The gap between the Grids */
+    grid-gap: 10px;
+
+    grid-template-areas:
+    "header header header header"
+    "navigation navigation navigation navigation"
+    "aside content content content"
+    "footer footer footer footer";
+}
+
+
+.g1_header {
+    grid-area: header;
+    background-color: rgba(23, 145, 145, 0.59);
+}
+
+.g2_navigation {
+    grid-area: navigation;
+    background-color: antiquewhite;
+}
+
+.g3_content {
+    grid-area: content;
+    background-color: darkgrey;
+}
+
+.g4_aside {
+    grid-area: aside;
+    background-color: aliceblue;
+}
+
+.g5_footer {
+    grid-area: footer;
+    background-color: #687eff;
+}
