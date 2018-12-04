@@ -14,6 +14,10 @@
     /* The gap between the Grids */
     grid-gap: 10px;
 
+    /* boarder around the website */
+
+    padding: 10px;
+
     grid-template-areas:
     "header header header header"
     "navigation navigation navigation navigation"
@@ -25,29 +29,24 @@
 .g1_header {
     grid-area: header;
     background-color: rgba(23, 145, 145, 0.59);
-    margin: 10px 10px 0;
 }
 
 .g2_navigation {
     grid-area: navigation;
     background-color: antiquewhite;
-    margin: 0 10px;
 }
 
 .g3_content {
     grid-area: content;
     background-color: darkgrey;
-    margin: 0 10px;
 }
 
 .g4_aside {
     grid-area: aside;
     background-color: aliceblue;
-    margin: 0 10px;
 }
 
 .g5_footer {
     grid-area: footer;
     background-color: #687eff;
-    margin: 0 10px;
 }
