@@ -1,0 +1,34 @@
+/* CSS for Style the content */
+
+html{
+    font-family: "Arial, Times New Roman, Times, serif";
+    font-size: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.style_header{
+    margin: 20px;
+}
+
+.style_navigation{
+    margin: 20px;
+}
+
+.style_content{
+    margin: 20px;
+}
+
+.style_aside{
+    margin: 20px:
+}
+
+.style_footer{
+    margin: 20px
+}
