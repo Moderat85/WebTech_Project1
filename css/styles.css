@@ -1,7 +1,6 @@
 /* CSS for Style the content */
 
 html{
-    font-family: "Arial, Times New Roman, Times, serif";
     font-size: 1em;
 }
 
@@ -26,9 +25,9 @@ h2{
 }
 
 .style_aside{
-    margin: 20px:
+    margin: 20px;
 }
 
 .style_footer{
-    margin: 20px
+    margin: 20px;
 }
