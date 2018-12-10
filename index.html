@@ -7,9 +7,14 @@
     <title>Webtech Project Moderer / Kullberg / Baier </title>
     <link rel="stylesheet" href="css/gridlayout.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="import" href="./templates/news.html" id="newsTemplateImport"> -->
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+    
 </head>
 
-<body>
+<body onload="onLoad()">
+        
 <!-- call gridlayout for the complete side -->
 <div class="gridlayout">
 
@@ -33,10 +38,10 @@
         <ul  id= "gr2_link_navigation" class="g2_navigation"
         tabindex="-1">
         <li style="display:inline;color:black; padding:0.5em 0.6em">
-                <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/news.html">News</a>
+                <a onclick="appendNews()" href="#">News</a>
         </li>
         <li style="display:inline;color:black; padding:0.5em 0.6em">
-                <a href="C:\FH\SWD18\WS18\WebTEch\Projektarbeit Schuhmacher\Neuer Ordner\WebTech_Project1\Notizen\Biografie\index.html">Biographie</a>
+                <a onclick="appendBio()" href="#">Biographie</a>
         </li>
         <li style="display:inline;color:black; padding: 2em 0.5em">
                 <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Album.html">Album</a>
@@ -78,7 +83,14 @@
         Project - Moderer, Kullberg & Baier
     </div>
 </footer>
-
-</body>
 </div>
+    <template id="newsTemplate">
+        <h3>NEWS</h3>
+        <p>Das ist der News Bereich</p>
+    </template>
+    <template id="bioTemplate">
+        <h3>Biographie</h3>
+        <p>Das ist der Bio Bereich</p>
+    </template>
+</body>
 </html>

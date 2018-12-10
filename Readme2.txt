@@ -7,4 +7,6 @@ Farbe gebaut
 					zum Laufen zu bringen, hat nicht ganz geklappt! (kann gerne wieder gelöscht werden, habe Patrick seinen Code nur 
 					auskommentiert!) In Notizen ist eine Unterseite Biografie erstellt, allerdings übernimmt er nicht die formatierungen 
 					und es wäre erst wieder die Seite kopiert! Wir sollten uns Bitte echt nochmal Zeit nehmen! DANKE! Kulli
-						
+
+06.12.2018 Baier	- SolutionItems Ordner angelegt. In diesem Ordner können alle Dateien welche nicht direkt zur Webseite gehören abgelegt werden	
+					- main.js für benötigte JavaScript Funktionen im Ordner scripts erstellt
