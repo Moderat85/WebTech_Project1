@@ -7,14 +7,12 @@
     <title>Webtech Project Moderer / Kullberg / Baier </title>
     <link rel="stylesheet" href="css/gridlayout.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="import" href="./templates/news.html" id="newsTemplateImport"> -->
-
     <script type="text/javascript" src="scripts/main.js"></script>
-    
+
 </head>
 
 <body onload="onLoad()">
-        
+
 <!-- call gridlayout for the complete side -->
 <div class="gridlayout">
 
@@ -25,25 +23,14 @@
     </header>
 
     <nav class="g2_navigation">
- <!--       <div class="g2_navigation">
-            <h2>
-                <a href="#News">News</a>
-                <a href="#Biographie">Biographie</a>
-                <a href="#Album">Album</a>
-                <a href="#Unfall">Unfall</a>
-                <a href="#Foundation">Foundation</a>
-                <a href="#Kontakt">Kontakt</a>
-            </h2>
-        </div> -->
-        <ul  id= "gr2_link_navigation" class="g2_navigation"
-        tabindex="-1">
-        <li style="display:inline;color:black; padding:0.5em 0.6em">
+        <ul id="gr2_link_navigation" tabindex="-1">
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
                 <a onclick="appendNews()" href="#">News</a>
-        </li>
-        <li style="display:inline;color:black; padding:0.5em 0.6em">
+            </li>
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
                 <a onclick="appendBio()" href="#">Biographie</a>
-        </li>
-        <li style="display:inline;color:black; padding: 2em 0.5em">
+            </li>
+            <li style="display:inline;color:black; padding: 2em 0.5em">
                 <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Album.html">Album</a>
             </li>
             <li style="display:inline;color:black; padding: 2em 0.5em">
@@ -55,8 +42,7 @@
             <li style="display:inline;color:black; padding: 2em 0.5em">
                 <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Kontakt.html">Kontakt</a>
             </li>
-            </ul>
-        </div>
+        </ul>
     </nav>
 
     <aside class="g4_aside">
@@ -78,19 +64,20 @@
         </div>
     </main>
 
-<footer class="g5_footer">
-    <div class="style_footer">
-        Project - Moderer, Kullberg & Baier
-    </div>
-</footer>
+    <footer class="g5_footer">
+        <div class="style_footer">
+            Project - Moderer, Kullberg & Baier
+        </div>
+    </footer>
 </div>
-    <template id="newsTemplate">
-        <h3>NEWS</h3>
-        <p>Das ist der News Bereich</p>
-    </template>
-    <template id="bioTemplate">
-        <h3>Biographie</h3>
-        <p>Das ist der Bio Bereich</p>
-    </template>
+
+<template id="newsTemplate">
+    <h3>NEWS</h3>
+    <p>Das ist der News Bereich</p>
+</template>
+<template id="bioTemplate">
+    <h3>Biographie</h3>
+    <p>Das ist der Bio Bereich</p>
+</template>
 </body>
 </html>
