@@ -1,7 +1,6 @@
 /* CSS for Layout the Website */
 
 /* Main Grid Element */
-
 .gridlayout {
     display: grid;
 
@@ -19,10 +18,9 @@
     padding: 10px;
 
     grid-template-areas:
-    "header header header header"
-    "navigation navigation navigation navigation"
-    "aside content content content"
-    "footer footer footer footer";
+            "header header header header"
+            "navigation navigation navigation navigation"
+            "aside content content content" "footer footer footer footer";
 }
 
 
