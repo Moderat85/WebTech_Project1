@@ -10,3 +10,9 @@ Farbe gebaut
 
 06.12.2018 Baier	- SolutionItems Ordner angelegt. In diesem Ordner können alle Dateien welche nicht direkt zur Webseite gehören abgelegt werden	
 					- main.js für benötigte JavaScript Funktionen im Ordner scripts erstellt
+
+13.12.2018 Moderer - Links alle eingefügt (Frage ob man hier eigene htmls anlegen sollte, ansonsten wird die index.html zu viel - meiner Meinung nach)
+                   - Code ausgebessert, da das Grid Layout nicht mehr funktioniert hat
+                   - Style dem Content hinzugefügt
+                   - Versucht mobile first zu machen, jedoch muss ich mir das vorher ansehen und überlegen
+                   - unnötigen code entfernt
