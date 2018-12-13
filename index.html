@@ -23,22 +23,25 @@
     <nav class="g2_navigation">
         <ul id="gr2_link_navigation" tabindex="-1">
             <li style="display:inline;color:black; padding:0.5em 0.6em">
+                <a href="index.html">Home</a>
+            </li>
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
                 <a onclick="appendNews()" href="#">News</a>
             </li>
             <li style="display:inline;color:black; padding:0.5em 0.6em">
                 <a onclick="appendBio()" href="#">Biographie</a>
             </li>
-            <li style="display:inline;color:black; padding: 2em 0.5em">
-                <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Album.html">Album</a>
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
+                <a onclick="appendalbum()" href="#">Album</a>
             </li>
-            <li style="display:inline;color:black; padding: 2em 0.5em">
-                <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Unfall.html">Unfall</a>
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
+                <a onclick="appendaccident()" href="#">Unfall</a>
             </li>
-            <li style="display:inline;color:black; padding: 2em 0.5em">
-                <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Foundation.html">Foundation</a>
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
+                <a onclick="appendfoundation()" href="#">Foundation</a>
             </li>
-            <li style="display:inline;color:black; padding: 2em 0.5em">
-                <a href="https://github.com/Moderat85/WebTech_Project1/blob/master/Kontakt.html">Kontakt</a>
+            <li style="display:inline;color:black; padding:0.5em 0.6em">
+                <a onclick="appendcontact()" href="#">Kontakt</a>
             </li>
         </ul>
     </nav>
@@ -79,6 +82,30 @@
     <div class="style_content">
         <h3>Biographie</h3>
         <p>Das ist der Bio Bereich</p>
+    </div>
+</template>
+<template id="albumTemplate" class="style_content">
+    <div class="style_content">
+        <h3>Album</h3>
+        <p>Das ist der Album Bereich</p>
+    </div>
+</template>
+<template id="accidentTemplate" class="style_content">
+    <div class="style_content">
+        <h3>Unfall</h3>
+        <p>Das ist der Unfall Bereich</p>
+    </div>
+</template>
+<template id="foundationTemplate" class="style_content">
+    <div class="style_content">
+        <h3>Foundation</h3>
+        <p>Das ist der Foundadtion Bereich</p>
+    </div>
+</template>
+<template id="contactTemplate" class="style_content">
+    <div class="style_content">
+        <h3>Kontakt</h3>
+        <p>Das ist der Kontakt Bereich</p>
     </div>
 </template>
 </body>
