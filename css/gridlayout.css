@@ -2,25 +2,20 @@
 
 /* Main Grid Element */
 .gridlayout {
+    min-height: 100%;
     display: grid;
 
     /* Vertical evenly divided */
     grid-template-columns: 1fr 2fr 2fr 1fr;
 
     /* Horizontal ...... TESTEN !!!!*/
-    grid-template-rows: 200px 50px auto 100px;
-
-    /* The gap between the Grids */
-    grid-gap: 10px;
-
-    /* boarder around the website */
-
-    padding: 10px;
+    grid-template-rows: auto 50px 1fr auto;
 
     grid-template-areas:
             "header header header header"
             "navigation navigation navigation navigation"
-            "aside content content content" "footer footer footer footer";
+            "aside content content content" 
+            "footer footer footer footer";
 }
 
 
