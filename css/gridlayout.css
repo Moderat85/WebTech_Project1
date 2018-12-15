@@ -1,21 +1,59 @@
 /* CSS for Layout the Website */
 
 /* Main Grid Element */
-.gridlayout {
-    min-height: 100%;
-    display: grid;
+@media (min-width: 576px) {
+    .gridlayout {
+        min-height: 100%;
+        display: grid;
 
-    /* Vertical evenly divided */
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+        /* Vertical evenly divided */
+        grid-template-columns: 1fr 2fr 2fr 1fr;
 
-    /* Horizontal ...... TESTEN !!!!*/
-    grid-template-rows: auto 50px 1fr auto;
+        grid-template-rows: auto 50px auto 1fr auto;
 
-    grid-template-areas:
-            "header header header header"
-            "navigation navigation navigation navigation"
-            "aside content content content" 
-            "footer footer footer footer";
+        grid-template-areas:
+                "header header header header"
+                "navigation navigation navigation navigation"
+                "aside aside aside aside" 
+                "content content content content"
+                "footer footer footer footer";
+    }
+}
+
+@media (min-width: 768px) {
+    .gridlayout {
+        min-height: 100%;
+        display: grid;
+
+        /* Vertical evenly divided */
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+
+        grid-template-rows: auto 50px 1fr auto;
+
+        grid-template-areas:
+                "header header header header"
+                "navigation navigation navigation navigation"
+                "aside content content content" 
+                "footer footer footer footer";
+    }
+}
+
+@media (min-width: 992px) {
+    .gridlayout {
+        min-height: 100%;
+        display: grid;
+
+        /* Vertical evenly divided */
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+
+        grid-template-rows: auto 50px 1fr auto;
+
+        grid-template-areas:
+                "header header header header"
+                "navigation navigation navigation navigation"
+                "aside content content content" 
+                "footer footer footer footer";
+    }
 }
 
 
@@ -26,7 +64,7 @@
 
 .g2_navigation {
     grid-area: navigation;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .g3_content {
