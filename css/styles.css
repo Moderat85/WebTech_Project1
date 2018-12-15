@@ -35,3 +35,9 @@ h2{
 .style_footer{
     margin: 20px;
 }
+
+nav > ul > li {
+    display: inline;
+    color:black; 
+    padding: 0.5em 0.6em;
+}
