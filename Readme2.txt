@@ -16,3 +16,4 @@ Farbe gebaut
                    - Style dem Content hinzugefügt
                    - Versucht mobile first zu machen, jedoch muss ich mir das vorher ansehen und überlegen
                    - unnötigen code entfernt
+18.12.2018 Baier	- Mit responsive Design Umsetzung angefangen
