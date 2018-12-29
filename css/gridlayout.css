@@ -12,11 +12,10 @@
         grid-template-rows: auto 50px auto 1fr auto;
 
         grid-template-areas:
-                "header header header header"
-                "navigation navigation navigation navigation"
-                "aside aside aside aside" 
-                "content content content content"
-                "footer footer footer footer";
+                "header header header navigation"
+                "aside aside aside navigation" 
+                "content content content navigation"
+                "footer footer footer navigation" ;
     }
 }
 

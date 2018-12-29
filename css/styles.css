@@ -16,6 +16,19 @@ h2{
     text-align: center;
 }
 
+.burgerButton {
+    display: none;
+    position: absolute; 
+    right: 5px; 
+    top: 20px;
+}
+
+@media (max-width: 576px) {
+    .burgerButton {
+        display: inline;
+    }
+}
+
 .style_header{
     margin: 20px;
 }
