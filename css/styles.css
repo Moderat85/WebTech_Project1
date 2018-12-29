@@ -54,3 +54,36 @@ nav > ul > li {
     color:black; 
     padding: 0.5em 0.6em;
 }
+
+/* Contact form CSS */
+
+input[type=text], input[type=tel], input[type=email], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+    width: 50%;
+    background-color: grey;
+    color: azure;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: dimgray;
+}
+
+.contactform {
+    border-radius: 5px;
+    background-color: lightgrey;
+    padding: 20px;
+}
