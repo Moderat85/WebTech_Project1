@@ -70,7 +70,7 @@ input[type=text], input[type=tel], input[type=email], textarea, select {
 input[type=submit], input[type=reset] {
     width: 50%;
     background-color: grey;
-    color: azure;
+    color: lightgrey;
     padding: 10px;
     margin: 5px;
     border: none;
