@@ -1,7 +1,7 @@
 /* CSS for Layout the Website */
 
 /* Main Grid Element */
-@media (min-width: 576px) {
+@media (max-width: 768px) {
     .gridlayout {
         min-height: 100%;
         display: grid;
@@ -37,12 +37,12 @@
     }
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
     .gridlayout {
         min-height: 100%;
         display: grid;
 
-        /* Vertical evenly divided */
+        !* Vertical evenly divided *!
         grid-template-columns: 1fr 2fr 2fr 1fr;
 
         grid-template-rows: auto 50px 1fr auto;
@@ -53,7 +53,7 @@
                 "aside content content content" 
                 "footer footer footer footer";
     }
-}
+}*/
 
 
 .g1_header {

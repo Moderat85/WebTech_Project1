@@ -21,3 +21,5 @@ Farbe gebaut
 29.12.2018 Moderer - Kontaktformular gebaut (soweit es gint nach wireframe - Mithilfe von W3Schools)
                    - CSS darauf angewedent und die Kontaktseite meiner Meinung nach komplet fertig gestellt
                    - HTML Text bei Kontaktformulat eingefügt
+                   - Gridlayout anstatt min auf max gesetzt (erster Teil) und dritten Teil ausgeklammert. Somit sollte die komplette Homepage abgedeckt sein (Responsive)
+                        Vorher war ein Fehler unter 576 px - Alles nur Testweise
