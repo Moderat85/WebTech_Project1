@@ -17,3 +17,7 @@ Farbe gebaut
                    - Versucht mobile first zu machen, jedoch muss ich mir das vorher ansehen und überlegen
                    - unnötigen code entfernt
 18.12.2018 Baier	- Mit responsive Design Umsetzung angefangen
+
+29.12.2018 Moderer - Kontaktformular gebaut (soweit es gint nach wireframe - Mithilfe von W3Schools)
+                   - CSS darauf angewedent und die Kontaktseite meiner Meinung nach komplet fertig gestellt
+                   - HTML Text bei Kontaktformulat eingefügt
