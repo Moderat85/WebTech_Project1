@@ -1,7 +1,31 @@
 /* CSS for Layout the Website */
 
 /* Main Grid Element */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    .burgerButton {
+        display: inline;
+    }
+
+    .g2_navigation {
+        position: absolute; 
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+        /* width: 200px; */
+        right: 0px;
+        transition: transform .3s ease-in-out;
+    }
+
+    .g2_navigation > ul {
+        /* padding: 5px 10px; */
+    }
+
+    .g2_navigation > ul > li {
+        display: block;
+        padding: 10;
+        margin: 0;
+    }
+
     .gridlayout {
         min-height: 100%;
         display: grid;
@@ -17,9 +41,23 @@
                 "content content content navigation"
                 "footer footer footer navigation" ;
     }
+
+    .gridlayout-without-nav {
+        /* Vertical evenly divided */
+        grid-template-columns: 1fr 2fr 3fr;
+    }
+
+    .gridlayout-with-nav {
+        /* Vertical evenly divided */
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
 }
 
 @media (min-width: 768px) {
+    .burgerButton {
+        display: none;
+    }
+
     .gridlayout {
         min-height: 100%;
         display: grid;
@@ -59,11 +97,11 @@
 .g1_header {
     grid-area: header;
     background-color: rgba(23, 145, 145, 0.59);
+    position: relative;
 }
 
 .g2_navigation {
     grid-area: navigation;
-    /* background-color: antiquewhite; */
 }
 
 .g3_content {

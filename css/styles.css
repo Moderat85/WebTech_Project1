@@ -1,6 +1,7 @@
 /* CSS for Style the content */
 
 html, body{
+    box-sizing: border-box;
     font-size: 1em;
     height: 100%;
     width: 100%;
@@ -17,16 +18,13 @@ h2{
 }
 
 .burgerButton {
-    display: none;
     position: absolute; 
     right: 5px; 
-    top: 20px;
+    top: 5px;
 }
 
-@media (max-width: 576px) {
-    .burgerButton {
-        display: inline;
-    }
+.burgerButton > img {
+    width: 20px;
 }
 
 .style_header{
@@ -34,7 +32,19 @@ h2{
 }
 
 .style_navigation{
-    margin: 20px;
+    /* margin: 20px; */
+    position: relative;
+}
+
+.nav-visible {
+    opacity: 1;
+    right: 0px; 
+}
+
+.nav-invisible {
+    transition: opacity 1s ease-out;
+    opacity: 0; 
+    right: -200px; 
 }
 
 .style_content{
@@ -47,6 +57,9 @@ h2{
 
 .style_footer{
     margin: 20px;
+}
+nav > ul {
+    padding: 0;
 }
 
 nav > ul > li {

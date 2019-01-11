@@ -12,17 +12,18 @@
 
 <body onload="onLoad()">
 <!-- call gridlayout for the complete side -->
-<div class="gridlayout">
+<div class="gridlayout" id="main">
 
     <header class="g1_header">
         <div class="style_header">
             <h1> Personal Blog - Topic Michael Schumacher </h1>
-            <button class="burgerButton">Burger</button>
         </div>
-
+        <a class="burgerButton" href="#" onclick="showOrHideNavigation()">
+            <img src="img/burger-icon.png">
+        </a>
     </header>
 
-    <nav class="g2_navigation">
+    <nav class="g2_navigation" id="navigation">           
         <ul id="gr2_link_navigation" tabindex="-1">
             <li>
                 <a href="index.html">Home</a>
