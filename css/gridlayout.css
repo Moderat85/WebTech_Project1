@@ -4,14 +4,15 @@
 @media only screen and (max-width: 768px) {
     .burgerButton {
         display: inline;
+        z-index: 100;
     }
 
     .g2_navigation {
-        position: absolute; 
+        position: fixed; 
         top: 0;
         bottom: 0;
         opacity: 1;
-        /* width: 200px; */
+        /* width: 250px; */
         right: 0px;
         transition: transform .3s ease-in-out;
     }
@@ -31,9 +32,9 @@
         display: grid;
 
         /* Vertical evenly divided */
-        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr 100px;
 
-        grid-template-rows: auto 50px auto 1fr auto;
+        grid-template-rows: auto auto 1fr auto;
 
         grid-template-areas:
                 "header header header navigation"
@@ -44,7 +45,7 @@
 
     .gridlayout-without-nav {
         /* Vertical evenly divided */
-        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-columns: 1fr 2fr 2fr;
     }
 
     .gridlayout-with-nav {
