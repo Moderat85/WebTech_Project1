@@ -59,6 +59,10 @@
         display: none;
     }
 
+    .g2_navigation {
+        opacity: 1;
+    }
+
     .gridlayout {
         min-height: 100%;
         display: grid;
