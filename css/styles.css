@@ -50,6 +50,8 @@ h2{
 
 .style_content{
     margin: 20px;
+    color: white;
+    
 }
 
 .style_aside{
@@ -96,18 +98,26 @@ input[type=submit]:hover, input[type=reset]:hover {
     background-color: dimgray;
 }
 
+.article-justify {
+
+    width: 500px;
+    text-align: justify;
+}
+
 .contactform {
     border-radius: 5px;
     background-color: lightgrey;
     padding: 20px;
 }
-
-.article-text {
-    max-width: 700px; 
-    text-align: justify;
+.style_navigation link {
+ color: white;
 }
-
-.article-image {
-    max-width: 100%;
-    height: auto;
+.style_navigation :visited {
+    color: yellow;
+}
+.style_navigation:active {
+    color: yellow;
+}
+.my.style_navigation:hover {
+    color: #aaa;
 }

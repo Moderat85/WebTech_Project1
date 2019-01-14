@@ -101,7 +101,8 @@
 
 .g1_header {
     grid-area: header;
-    background-color: rgba(23, 145, 145, 0.59);
+    background-color: transparent;
+    color: yellow;
     position: relative;
 }
 
@@ -111,7 +112,7 @@
 
 .g3_content {
     grid-area: content;
-    background-color: darkgrey;
+    background-color: transparent;
 }
 
 .g4_aside {
@@ -122,4 +123,16 @@
 .g5_footer {
     grid-area: footer;
     background-color: #687eff;
+}
+.g2_navigation a:link {
+    color: white;
+}
+.g2_navigation a:visited {
+    color: yellow;
+}
+.g2_navigation a:active {
+    color: yellow;
+}
+.g2_navigation a:hover {
+    color: yellowgreen;
 }
