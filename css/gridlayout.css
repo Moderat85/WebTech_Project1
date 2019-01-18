@@ -102,7 +102,6 @@
 .g1_header {
     grid-area: header;
     background-color: transparent;
-    color: yellow;
     position: relative;
 }
 
@@ -113,16 +112,20 @@
 .g3_content {
     grid-area: content;
     background-color: transparent;
+    margin: 20px;
 }
 
 .g4_aside {
     grid-area: aside;
-    background-color: aliceblue;
+    background-color: dimgrey;
 }
 
 .g5_footer {
     grid-area: footer;
-    background-color: #687eff;
+    background-color: rgb(66, 64, 64);
+    height: 50px;
+    position: relative;
+
 }
 .g2_navigation a:link {
     color: white;
