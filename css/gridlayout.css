@@ -25,9 +25,13 @@
         display: block;
         padding: 10;
         margin: 0;
-    }
+    } 
+    .responsive-li {
+        display: block;
 
+    }
     .gridlayout {
+        padding-bottom: 50px;
         min-height: 100%;
         display: grid;
 
@@ -52,6 +56,9 @@
         /* Vertical evenly divided */
         grid-template-columns: 1fr 2fr 2fr 1fr;
     }
+    .subnav {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -61,9 +68,12 @@
 
     .g2_navigation {
         opacity: 1;
+    }  
+    .responsive-li {
+        display: none;
     }
-
     .gridlayout {
+        padding-bottom: 50px;
         min-height: 100%;
         display: grid;
 
@@ -77,6 +87,10 @@
                 "navigation navigation navigation navigation"
                 "aside content content content" 
                 "footer footer footer footer";
+    }
+    .subnav {
+        display: inline;
+        position: absolute;
     }
 }
 
@@ -101,7 +115,7 @@
 
 .g1_header {
     grid-area: header;
-    background-color: rgba(23, 145, 145, 0.59);
+    background-color: transparent;
     position: relative;
 }
 
@@ -111,15 +125,35 @@
 
 .g3_content {
     grid-area: content;
-    background-color: darkgrey;
+    background-color: transparent;
+    margin: 20px;
 }
 
 .g4_aside {
     grid-area: aside;
-    background-color: aliceblue;
+    background-color: dimgrey;
 }
 
 .g5_footer {
     grid-area: footer;
-    background-color: #687eff;
+    background-color: rgb(66, 64, 64);
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.g2_navigation a:link {
+    color: white;
+}
+.g2_navigation a:visited {
+    color: yellow;
+}
+.g2_navigation a:active {
+    color: yellow;
+}
+.g2_navigation a:hover {
+    color: yellowgreen;
 }
