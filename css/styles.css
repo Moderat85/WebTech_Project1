@@ -3,7 +3,7 @@
 html, body{
     font-family: 'Titillium Web', 'Open Sans', sans-serif;
     box-sizing: border-box;
-    font-size: 1.1em;
+    font-size: 1em;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -121,7 +121,8 @@ input[type=submit], input[type=reset] {
 }
 
 input[type=submit]:hover, input[type=reset]:hover {
-    background-color: dimgray;
+    background-color: lightgrey;
+    color: dimgrey;
 }
 
 .article-justify {
@@ -132,7 +133,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 .contactform {
     border-radius: 5px;
-    background-color: darkgrey;
+    background-color: dimgrey;
     padding: 20px;
 }
 .style_navigation link {

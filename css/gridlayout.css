@@ -94,25 +94,6 @@
     }
 }
 
-/*@media (min-width: 992px) {
-    .gridlayout {
-        min-height: 100%;
-        display: grid;
-
-        !* Vertical evenly divided *!
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-
-        grid-template-rows: auto 50px 1fr auto;
-
-        grid-template-areas:
-                "header header header header"
-                "navigation navigation navigation navigation"
-                "aside content content content" 
-                "footer footer footer footer";
-    }
-}*/
-
-
 .g1_header {
     grid-area: header;
     background-color: transparent;
