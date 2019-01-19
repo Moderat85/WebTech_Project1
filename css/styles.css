@@ -68,6 +68,7 @@ h2{
 .style_footer{
     color: white;
     text-align: center;
+    margin: 10px;
 }
 
 /*.bodyimage {
@@ -120,7 +121,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 .contactform {
     border-radius: 5px;
-    background-color: lightgrey;
+    background-color: darkgrey;
     padding: 20px;
 }
 .style_navigation link {
