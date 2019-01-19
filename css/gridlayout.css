@@ -36,7 +36,7 @@
         display: grid;
 
         /* Vertical evenly divided */
-        grid-template-columns: 1fr 2fr 2fr 100px;
+        grid-template-columns: 1fr 2fr 2fr 130px;
 
         grid-template-rows: auto auto 1fr auto;
 
