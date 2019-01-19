@@ -28,6 +28,10 @@ h2{
     color: white;
 }
 
+img {
+    max-width: 100%;
+}
+
 .burgerButton {
     position: absolute; 
     right: 5px; 
