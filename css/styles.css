@@ -9,6 +9,13 @@ html, body{
     padding: 0;
     min-width: 330px;
 }
+body {
+    background-image: url(http://www3.pictures.zimbio.com/gi/Michael+Schumacher+F1+Grand+Prix+Singapore+azpkz5Z299Ll.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 h1{
     text-align: center;
@@ -35,9 +42,7 @@ h2{
 }
 
 .style_navigation{
-    /* margin: 20px; */
     position: relative;
- 
 }
 
 .nav-visible {
@@ -55,9 +60,6 @@ h2{
     color:white;
     border-color: whitesmoke;
     word-wrap: break-word;
-    /*width: 70%;
-    text-align: justify;
-    margin: 20px;*/
 }
 
 .style_aside{
@@ -65,25 +67,34 @@ h2{
     color: #fff;
 }
 
-.style_footer{
+.project-info{
     color: white;
-    text-align: center;
+    float: right;
 }
 
-/*.bodyimage {
-    position: absolute;
-    width: 60%;
-}*/
+.style_footer {
+    padding-right: 20px;
+}
+
+.style_footer > * {
+    margin-top: 15px;
+}
+
+.style_footer a {
+    color: gray;
+}
 
 nav > ul {
     padding: 0;
 }
 
-nav > ul > li {
+nav li {
     display: inline;
     color:black; 
     padding: 0.5em 0.6em;
 }
+
+
 
 /* Contact form CSS */
 
@@ -179,10 +190,3 @@ p {
 	display: block;
 }
 
-body {
-        background-image: url(http://www3.pictures.zimbio.com/gi/Michael+Schumacher+F1+Grand+Prix+Singapore+azpkz5Z299Ll.jpg); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-}

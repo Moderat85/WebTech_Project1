@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Webtech Project Moderer / Kullberg / Baier </title>
     <link rel="stylesheet" href="css/gridlayout.css">
@@ -12,378 +12,462 @@
 </head>
 
 <body onload="onLoad()">
-<!-- call gridlayout for the complete side -->
-<div class="gridlayout" id="main">
+    <!-- call gridlayout for the complete side -->
+    <div class="gridlayout" id="main">
 
-    <header class="g1_header">
-        <div class="style_header">
-            <h1> Personal Blog - Topic Michael Schumacher </h1>
-        </div>
-        <a class="burgerButton" href="#" onclick="showOrHideNavigation()">
-            <img src="img/burger-icon-weiß.png">
-        </a>
-    </header>
+        <header class="g1_header">
+            <div class="style_header">
+                <h1> Personal Blog - Topic Michael Schumacher </h1>
+            </div>
+            <a class="burgerButton" href="#" onclick="showOrHideNavigation()">
+                <img src="img/burger-icon-weiß.png">
+            </a>
+        </header>
 
-    <nav class="g2_navigation" id="navigation">
-        <ul id="gr2_link_navigation" tabindex="-1">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a onclick="appendTemplateContent('newsTemplate')" href="#">News</a>
-            </li>
-            <li>
-                <a onclick="appendTemplateContent('bioTemplate')" href="#">Biographie</a>
-            </li>
-            <li>
-                <a onclick="appendTemplateContent('albumTemplate')" href="#">Album</a>
-            </li>
-            <li>
-                <a onclick="appendTemplateContent('accidentTemplate')" href="#">Unfall</a>
-            </li>
-            <li>
-                <a onclick="appendTemplateContent('contactTemplate')" href="#">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="g2_navigation" id="navigation">
+            <ul id="gr2_link_navigation" tabindex="-1">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a onclick="appendTemplateContent('newsTemplate')" href="#">News</a>
+                </li>
+                <li>
+                    <a onclick="appendTemplateContent('bioTemplate')" href="#">Biographie</a>
+                </li>
+                <li>
+                    <a onclick="appendTemplateContent('albumTemplate')" href="#">Album</a>
+                </li>
+                <li>
+                    <a onclick="appendTemplateContent('accidentTemplate')" href="#">Unfall</a>
+                </li>
+                <li>
+                    <a onclick="appendTemplateContent('contactTemplate')" href="#">Kontakt</a>
+                </li>
+                <li class="responsive-li">
+                    <a onclick="appendTemplateContent('AGBTemplate')" href="#">AGB</a>
+                </li>
+                <li class="responsive-li">
+                    <a onclick="appendTemplateContent('privacyTemplate')" href="#">Datenschutz</a>
+                </li>
+                <li class="responsive-li">
+                    <a onclick="appendTemplateContent('referenceTemplate')" href="#">Quellenangabe</a>
+                </li>
+            </ul>
+        </nav>
 
-    <aside class="g4_aside">
-        <div class="style_aside">
-            <h2> Aktuelle News</h2>
-            <p>
-                17.01.2019 Schumi feiert den 50. Geburtstag
+        <aside class="g4_aside">
+            <div class="style_aside">
+                <h2> Aktuelle News</h2>
+                <p>
+                    17.01.2019 Schumi feiert den 50. Geburtstag
+                    Wie es Michael Schumacher an seinem 50. Geburtstag am 3. Januar 2019 wirklich geht, ist nur engsten
+                    Freunden und seiner Familie bekannt. Diese veröffentlichte am Vortag des runden Ehrentags aber ein
+                    offizielles Statement, in dem sie sich für die Unterstützung der Fans bedankt und die
+                    Veröffentlichung
+                    der "Michael Schumacher App" am 3. Januar 2019 ankündigt.
+                    <a href="https://www.autozeitung.de/arzt-aus-schumachers-ex-behandlungsteam-mahnt-geduld-an-180295.html"
+                        target="_blank">weiterlesen...</a>
+
+                </p>
+            </div>
+        </aside>
+
+        <main class="g3_content">
+            <div class="style_content">
+                <h2>Willkommen auf der Fanpage von Michael Schumacher!</h2>
+                <img width="100%" src="img/Schumacher-sieg-monza.jpg" alt="Schumacher-sieg-monza" />
+            </div>
+        </main>
+
+        <footer class="g5_footer style_footer">
+            <nav class="subnav">
+                <ul id="gr2_link_navigation" tabindex="-1" style="display: inline">
+                    <li style="display: inline">
+                        <a onclick="appendTemplateContent('AGBTemplate')" href="#">AGB</a>
+                    </li>
+                    <li style="display: inline">
+                        <a onclick="appendTemplateContent('privacyTemplate')" href="#">Datenschutz</a>
+                    </li>
+                    <li style="display: inline">
+                        <a onclick="appendTemplateContent('referenceTemplate')" href="#">Quellenangabe</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="project-info">
+                Project - Moderer, Kullberg & Baier
+            </span>
+        </footer>
+    </div>
+
+    <template id="newsTemplate">
+        <div class="style_content">
+            <h3>NEWS</h3>
+            <img width="100%" src="http://media.news.de/resources/thumbs/07/42/856941784_736x414/formel--legende-michael-schumacher-1547213857.jpg"
+                alt="Schumacher" />
+            <p class="article-text">
+
+                <h3> Schumi feiert den 50. Geburtstag</h3>
                 Wie es Michael Schumacher an seinem 50. Geburtstag am 3. Januar 2019 wirklich geht, ist nur engsten
-                Freunden und seiner Familie bekannt. Diese veröffentlichte am Vortag des runden Ehrentags aber ein
-                offizielles Statement, in dem sie sich für die Unterstützung der Fans bedankt und die Veröffentlichung
-                der "Michael Schumacher App" am 3. Januar 2019 ankündigt.
+                Freunden und
+                seiner Familie bekannt. Diese veröffentlichte am Vortag des runden Ehrentags aber ein offizielles
+                Statement, in
+                dem sie sich für die Unterstützung der Fans bedankt und die Veröffentlichung der "Michael Schumacher
+                App" am 3.
+                Januar 2019 ankündigt.
                 <a href="https://www.autozeitung.de/arzt-aus-schumachers-ex-behandlungsteam-mahnt-geduld-an-180295.html"
-                   target="_blank">weiterlesen...</a>
+                    target="_blank">weiterlesen...</a>
 
+                <h3> Was wurde aus Michael Schumacher?</h3>
+                Demnächst jährt sich Michael Schumachers tragischer Unfall zum fünften Mal. Am 29. Dezember 2013
+                verunglückte
+                die Formel-1-Legende beim Skifahren in Meribel schwer.
+                <a href="https://www.news.at/a/michael-schumacher-10468101" target="_blank">weiterlesen...</a>
+            </p>
+
+            <a target="_blank" href="http://www.news.de/sport/855739423/michael-schumacher-managerin-spricht-ueber-neue-details-in-podcast-sabine-kehm-aktuell-ueber-schumi-ruecktritt-frau-corinna-schumacher/1/">Wichtige
+                News</a>
+        </div>
+    </template>
+    <template id="bioTemplate" class="style_content">
+        <div class="style_content">
+            <h3>Biographie</h3>
+            <p><br>Michael Schumacher ist ein deutscher Motorsportler. Mit sieben Weltmeistertiteln ist er der
+                erfolgreichste Formel-1-Pilot der Geschichte. Seine größten Erfolge feiert er von 1996 bis 2006 mit dem
+                Ferrari-Rennstall, für den er fünf Mal hintereinander die Weltmeisterschaft einfährt. Seit einem
+                Skiunfall
+                2013 lebt er zurückgezogen bei seiner Familie.
+
+                <br>1969
+                3. Januar: Michael Schumacher wird in Hürth, einem Vorort von Köln, als Sohn des Kartbahnbetreibers
+                Rolf
+                Schumacher und dessen Frau Elisabeth geboren.
+                <br>
+                <br>1973
+                Schumacher fährt erste Go-Kart-Rennen.
+                <br>
+                <br>1975
+                30. Juni: Sein Bruder Ralf wird geboren.
+                <br>
+                <br>1984
+                Schumacher wird Deutscher Juniorenmeister im Kartfahren.
+                <br>
+                <br>1985
+                Er erringt abermals die Deutsche Juniorenmeisterschaft und wird außerdem Vize-Kart-Weltmeister.
+                <br>
+                <br>1986
+                Schumacher beginnt in Otzberg bei Darmstadt eine Ausbildung zum Kfz-Mechaniker und legt 1989 seine
+                Gesellenprüfung ab.
+                <br>
+                <br>1987
+                Gewinn der Kart-Europameisterschaft und der Deutschen Kartmeisterschaft.
+                <br>
+                <br>1988
+                Sieger der Deutschen Formel-König-Meisterschaft und Zweiter in der
+                Formel-Ford-1600-Europameisterschaft.
+                <br>
+                <br>1989
+                Schumacher fährt seine erste Formel 3-Saison im Team seines späteren Managers Willi Weber. Er kann zwei
+                Rennen gewinnen und beendet die Saison als Dritter im Gesamtklassement.
+                <br>
+                <br>1990
+                Sieg in der Formel 3-Meisterschaft. Schumacher nimmt außerdem im Juniorenteam von Mercedes-Benz an der
+                Gruppe C-Weltmeisterschaft teil und wird Fünfter in der Gesamtwertung.
+                <br>
+                <br>1991
+                25. August: Schumacher fährt sein erstes Formel 1- Rennen in Spa-Francochamps (Belgien) in einem
+                Jordan. Er
+                kann sich als Siebter qualifizieren, scheidet im Rennen allerdings nach wenigen Runden wegen
+                technischer
+                Probleme aus. Unmittelbar nach dem Rennen wird er von Benetton-Renault verpflichtet und fährt die
+                restliche
+                Saison für dieses Team. Er belegt Rang 12 in der Gesamtwertung.
+                <br>
+                <br>1992
+                In seiner ersten kompletten Formel 1-Saison kann Schumacher in Spa seinen ersten Sieg in der Formel 1
+                feiern: Er gewinnt vor Nigel Mansell, der zu diesem Zeitpunkt schon Weltmeister ist. Insgesamt wird
+                Schumacher in dieser Saison Dritter.
+                <br>
+                <br>1993
+                26. September: Schumacher siegt in Estoril (Portugal) vor Weltmeister Alain Prost und beendet die
+                Saison als
+                Gesamtvierter.
+                <br>
+                <br>1994
+                1. Mai: Ayrton Senna, der große Favorit für den WM-Titel 1994, stirbt im Rennen von Imola (San Marino).
+                Es
+                entwickelt sich daraufhin ein erbitterter Zweikampf zwischen Sennas Teamkollegen Damon Hill und Michael
+                Schumacher. Seinen Höhepunkt findet dieser Wettstreit im letzten Rennen der Saison, als beide Fahrer
+                nach
+                einer Kollision ausscheiden und Schumacher mit einem Punkt Vorsprung die Weltmeisterschaft für sich
+                entscheiden kann.
+                <br>
+                <br>1995
+                5. August: Heirat mit Corinna Betsch. In der Formel 1 kann Schumacher wiederum den Weltmeistertitel
+                erlangen
+                und wird somit der jüngste Doppelweltmeister der Formel 1. Er wird Sonderbotschafter "Sport und
+                Erziehung"
+                der UNESCO.
+                <br>
+                <br>1996
+                Vor dem Beginn der Formel 1-Saison wechselt Schumacher von Benetton zu Ferrari mit dem Ziel, das
+                traditionsreiche Team wieder siegfähig zu machen. Trotz vieler technisch bedingter Ausfälle kann er
+                immerhin
+                drei Rennen (Spanien, Belgien und Italien) für sich entscheiden und beendet die Saison als Dritter.
+                <br>
+                <br>1997
+                20. Februar: Seine Tochter Gina-Maria wird geboren.
+                <br>
+                In seiner zweiten Saison für Ferrari kämpft Schumacher um den WM-Titel. Im letzten Rennen rammt er
+                jedoch
+                bei einem Überholversuch Jacques Villeneuve, seinen härtesten Gegner, und scheidet aus. Villeneuve kann
+                weiterfahren und wird Weltmeister. Wegen seiner Aktion gegen Villeneuve werden Schumacher nachträglich
+                alle
+                seine 1997 errungenen Punkte und sein Vizeweltmeistertitel aberkannt.
+                <br>
+                <br>1998
+                Schumacher wird hinter Mika Häkkinen Vizeweltmeister der Formel 1.
+                <br>
+                <br>1999
+                22. März: Geburt seines Sohnes Mick. In der Formel 1 sieht alles wieder nach einem Zweikampf zwischen
+                Häkkinen und Schumacher aus, bis Schumacher in Silverstone (England) mit über 100km/h frontal in eine
+                Mauer
+                rast und sich das rechte Schien- und Wadenbein bricht. Er beendet die Saison auf Platz Fünf.
+                <br>
+                <br>2000
+                Schumacher wird zum ersten Mal Weltmeister mit Ferrari. Seit 1979 konnte das Rennsportunternehmen
+                erstmals
+                wieder den Fahrertitel erringen.
+                <br>
+                <br> 2001
+                In dieser Saison sichert sich Schumacher schon vor dem fünften Rennen vor Schluss den WM-Titel. Er kann
+                außerdem die Bestmarke von neun Siegen in einer Saison (Nigel Mansell, 1992) erreichen.
+                <br>
+                <br>2002
+                Schumacher wird bereits im siebten Rennen vor Saisonende zum fünften Mal Formel 1-Weltmeister. Mit 144
+                Punkten holt er so viele Punkte in einer Saison wie noch niemand zuvor.
+                <br>
+                <br>2003
+                20. April: Seine Mutter Elisabeth stirbt. Zu Beginn der Saison wird ein neues Punktesystem eingeführt:
+                Für
+                Platz Eins erhalten die Fahrer nun acht Punkte. Schumacher gewinnt daraufhin den Titel erst im letzten
+                Rennen. Es ist seine sechste Weltmeisterschaft mit zwei Punkten Vorsprung vor Kimi Räikkönen.
+                <br>
+                <br>2004
+                Mitte des Jahres hat er bereits zehn von elf Rennen gewonnen. Er beendet die Saison mit seiner siebten
+                Weltmeisterschaft. Nach fünf WM-Titeln in Folge und sieben WM-Titeln insgesamt ist er der
+                erfolgreichste
+                Formel 1-Pilot aller Zeiten.
+                <br>
+                <br>2005
+                Die Saison endet für Schumacher auf Rang 3. Er erzielt jedoch nur einen einzigen Grand-Prix-Sieg.
+                <br>
+                <br>2006
+                Schumacher leiht dem Pixar-Animationsfilm "Cars" seine Stimme für den Ferrari F430, sowoh in der
+                englischen
+                als auch in der deutschen Fassung.
+                <br>
+                <br>22.10. Schumacher fährt das letzte Rennen für Ferrari und zieht sich aus der Formel 1 zurück. Er
+                beendet
+                die Saison auf Platz 2 der WM-Wertung.
+                <br>
+                <br>2007
+                In der Realverfilmung des Comics "Asterix bei den Olympischen Spielen" spielt Schumacher die Rolle des
+                schnellen Germanen "Schumix", eines Pferdewagen-Rennfahrers.
+                <br>
+                Sein Bruder Ralf beendet nach 10 Jahren seine Formel-1-Karriere und wechselt zur DTM.
+                <br>
+                <br>2008
+                20.3. Schumacher nimmt als Amateur an einer sogenannten Motorrad-Racing-for-Fun-Veranstaltung teil. Er
+                landet auf Anhieb auf Platz 3. Im Verlauf des Jahres nimmt er an neun Rennen der Superbike-Klasse der
+                Internationalen Deutschen Motorradmeisterschaft für das Team Holzhauer Racing Promotion teil.
+                <br>
+                <br>2009
+                23.12. Nachdem es zuvor schon Gerüchte gegeben hatte, verkündet das neue Mercedes AMG Petronas F1 Team,
+                dass
+                Schumacher einen Dreijahresvertrag unterschrieben habe und somit in die Formel 1 zurückkehren werde.
+                <br>
+                <br>2010
+                Rückkehr in die Formel 1: Aufgrund technischer Schwierigkeiten mit dem Auto gestaltet sich die
+                Comeback-Saison für Schumacher unerwartet schwierig. Sie endet mit Platz 9 der WM-Gesamtwertung. Für
+                2012
+                kündigt er an, den Titel gewinnen zu wollen. Schumachers Pressesprecherin Sabine Kehm wird seine neue
+                Managerin und somit die Nachfolgerin Willi Webers.
+                <br>
+                2011
+                Auch die Saison 2011 beginnt enttäuschend für Schumacher und Mercedes. Es mehren sich Gerüchte, dass er
+                bereits Ende 2011 zurücktreten werde. Die Gerüchte stimmen nicht. Am Saison-Ende ist er 8. der
+                Weltrangliste.
+                <br>
+                <br>2012
+                Die starke Defektanfälligkeit seines Wagens bremst Schumachers Ambitionen auch 2012 aus.
+                <br>
+                4.10. In Suzuka (Japan) erklärt Schumacher seinen endgültigen Rücktritt von der Formel 1. Seine letzte
+                Saison endet für ihn auf Platz 13 der WM-Wertung.
+                <br>
+                <br>2013
+                29.12. Schumacher stürzt beim Skifahren in den französischen Alpen schwer und prallt mit dem Kopf an
+                einen
+                Felsen. Er erleidet ein schweres Schädel-Hirn-Trauma und wird in der Intensivstation der Klinik in
+                Grenoble
+                (F) ins künstliche Koma versetzt. Sein kritischer Zustand löst großen Medienrummel aus.
+                <br>
+                <br>2014
+                16. Juni: Seine Pressesprecherin und Managerin Sabine Kehm gibt bekannt, dass Schumacher nicht mehr im
+                Koma
+                liege und die Klinik in Grenoble verlassen habe. Zunächst kommt er zur Rehabilitation in die Uniklinik
+                in
+                Lausanne (CH).
+                <br>
+                September: Schumacher verlässt die Klinik in Lausanne und setzt seine Rehabilitation zu Hause fort.
+                <br>
+                November: Ein Jahr nach seinem Unfall erklärt seine Managerin, Schumacher mache Fortschritte, die der
+                Schwere seiner Verletzung angemessen seien.
+                <br>
+                Schumacher erhält den Millennium-Bambi. Formel-1-Weltmeister Sebastian Vettel hält die Laudatio.
+                <br>
+                <br>2016
+                15. Februar: Eröffnung der Ausstellung "Michael Schumacher – Der Rekordweltmeister" in Marburg an der
+                Lahn,
+                die bis 2018 laufen soll.
+                <br>
+                Mai: 25 Jahre nach seinem Debüt in der Formel 1 bekommt Schumacher den Lebenswerk-Preis des
+                Nürburgrings
+                verliehen.
+                <br>
+                <br>2017
+                Schumacher wird in die von der Stiftung Deutsche Sporthilfe initiierte Hall of Fame des deutschen
+                Sports
+                aufgenommen. Über seinen Gesundheitszustand ist nichts bekannt.
             </p>
         </div>
-    </aside>
-
-    <main class="g3_content">
+    </template>
+    <template id="albumTemplate" class="style_content">
         <div class="style_content">
-            <h2>Willkommen auf der Fanpage von Michael Schumacher!</h2>
-            <img width="100%" src="img/Schumacher-sieg-monza.jpg" alt="Schumacher-sieg-monza"/>
+            <h3>Album</h3>
+            <p>Das ist der Album Bereich</p>
+            <a href="#img1">
+                <img src="https://cdn-2.motorsport.com/static/img/amp/900000/950000/958000/958900/958904/s6_5718703/f1-european-gp-2001-michael-schumacher-5718703.jpg"
+                    class="thumbnail" alt="Schumacher Ferrari">
+            </a>
+            <a href="#img2">
+                <img src="https://www.augsburger-allgemeine.de/img/sonstige-sportarten/crop42482886/4599567046-cv16_9-w940/Michael-Schumacher-holte-1994-im-Benetton-Ford-B-194-5-seinen-ersten-Weltmeistertitel.jpg"
+                    class="thumbnail" alt="Schumacher Benetton">
+            </a>
+            <a href="#img3">
+                <img src="http://www.spox.com/de/sport/formel1/1102/Bilder/michael-schumacher-testfahrten-jerez-514.jpg"
+                    class="thumbnail" alt="Schumacher Mercedes">
+            </a>
+            <a href="#_" class="lightbox" id="img1">
+                <img src="https://cdn-2.motorsport.com/static/img/amp/900000/950000/958000/958900/958904/s6_5718703/f1-european-gp-2001-michael-schumacher-5718703.jpg"
+                    alt="Schumacher Ferrari">
+            </a>
+            <a href="#_" class="lightbox" id="img2">
+                <img src="https://www.augsburger-allgemeine.de/img/sonstige-sportarten/crop42482886/4599567046-cv16_9-w940/Michael-Schumacher-holte-1994-im-Benetton-Ford-B-194-5-seinen-ersten-Weltmeistertitel.jpg"
+                    alt="Schumacher Benetton">
+            </a>
+            <a href="#_" class="lightbox" id="img3">
+                <img src="http://www.spox.com/de/sport/formel1/1102/Bilder/michael-schumacher-testfahrten-jerez-514.jpg"
+                    alt="Schumacher Mercedes">
+            </a>
+
         </div>
-    </main>
-
-    <footer class="g5_footer">
-        <div class="style_footer">
-            Project - Moderer, Kullberg & Baier
+    </template>
+    <template id="accidentTemplate" class="style_content">
+        <div class="style_content">
+            <h3>Unfall</h3>
+            <p>Das ist der Unfall Bereich</p>
+            <br>Am 29. Dezember 2013 stürzte Schumacher beim Skifahren im französischen Méribel und prallte mit dem
+            Kopf
+            gegen einen Felsen, wobei er ein Schädel-Hirn-Trauma erlitt.[88][89] Den Ermittlungen der
+            Staatsanwaltschaft
+            zufolge, die u. a. die Aufnahmen seiner Helmkamera auswertete, fuhr er einige Meter neben der markierten
+            Piste,
+            aber nicht mit überhöhter Geschwindigkeit.[90] Schumachers Zustand war anschließend kritisch; er wurde in
+            ein
+            sogenanntes künstliches Koma versetzt.[91] Nach rascher Notfallrettung wurde er im Universitätsklinikum in
+            Grenoble behandelt; Anfang April 2014 zeigte er „Momente des Bewusstseins und des Erwachens“.[92] Am 16.
+            Juni
+            2014 teilte seine Managerin Sabine Kehm mit, dass Schumacher nicht mehr im Koma liege und das Krankenhaus
+            in
+            Grenoble verlassen habe, um „seine lange Phase der Rehabilitation fortzusetzen“.[93] Dazu war er zunächst
+            im
+            Universitätsspital des Kantons Waadt in Lausanne untergebracht.[94] Seit September 2014 setzt er seine
+            Rehabilitation zu Hause fort.[95] Seitdem wurden keine offiziellen Angaben mehr zu seinem
+            Gesundheitszustand
+            gemacht.[96][97] Im November 2018 machte Erzbischof Georg Gänswein Details zu einem Besuch im Haus der
+            Familie
+            Schumacher im Jahr 2016 publik und schilderte Eindrücke, die er von Michael Schumacher hatte.
         </div>
-    </footer>
-</div>
-
-<template id="newsTemplate">
-    <div class="style_content">
-        <h3>NEWS</h3>
-        <img width="100%" src="http://media.news.de/resources/thumbs/07/42/856941784_736x414/formel--legende-michael-schumacher-1547213857.jpg" alt="Schumacher"/>
-        <p class="article-text">
-
-        <h3> Schumi feiert den 50. Geburtstag</h3>
-        Wie es Michael Schumacher an seinem 50. Geburtstag am 3. Januar 2019 wirklich geht, ist nur engsten Freunden und
-        seiner Familie bekannt. Diese veröffentlichte am Vortag des runden Ehrentags aber ein offizielles Statement, in
-        dem sie sich für die Unterstützung der Fans bedankt und die Veröffentlichung der "Michael Schumacher App" am 3.
-        Januar 2019 ankündigt.
-        <a href="https://www.autozeitung.de/arzt-aus-schumachers-ex-behandlungsteam-mahnt-geduld-an-180295.html"
-           target="_blank">weiterlesen...</a>
-
-        <h3> Was wurde aus Michael Schumacher?</h3>
-        Demnächst jährt sich Michael Schumachers tragischer Unfall zum fünften Mal. Am 29. Dezember 2013 verunglückte
-        die Formel-1-Legende beim Skifahren in Meribel schwer.
-        <a href="https://www.news.at/a/michael-schumacher-10468101" target="_blank">weiterlesen...</a>
-        </p>
-
-        <a target="_blank"
-           href="http://www.news.de/sport/855739423/michael-schumacher-managerin-spricht-ueber-neue-details-in-podcast-sabine-kehm-aktuell-ueber-schumi-ruecktritt-frau-corinna-schumacher/1/">Wichtige
-            News</a>
-    </div>
-</template>
-<template id="bioTemplate" class="style_content">
-    <div class="style_content">
-        <h3>Biographie</h3>
-        <p><br>Michael Schumacher ist ein deutscher Motorsportler. Mit sieben Weltmeistertiteln ist er der
-            erfolgreichste Formel-1-Pilot der Geschichte. Seine größten Erfolge feiert er von 1996 bis 2006 mit dem
-            Ferrari-Rennstall, für den er fünf Mal hintereinander die Weltmeisterschaft einfährt. Seit einem Skiunfall
-            2013 lebt er zurückgezogen bei seiner Familie.
-
-            <br>1969
-            3. Januar: Michael Schumacher wird in Hürth, einem Vorort von Köln, als Sohn des Kartbahnbetreibers Rolf
-            Schumacher und dessen Frau Elisabeth geboren.
-            <br>
-            <br>1973
-            Schumacher fährt erste Go-Kart-Rennen.
-            <br>
-            <br>1975
-            30. Juni: Sein Bruder Ralf wird geboren.
-            <br>
-            <br>1984
-            Schumacher wird Deutscher Juniorenmeister im Kartfahren.
-            <br>
-            <br>1985
-            Er erringt abermals die Deutsche Juniorenmeisterschaft und wird außerdem Vize-Kart-Weltmeister.
-            <br>
-            <br>1986
-            Schumacher beginnt in Otzberg bei Darmstadt eine Ausbildung zum Kfz-Mechaniker und legt 1989 seine
-            Gesellenprüfung ab.
-            <br>
-            <br>1987
-            Gewinn der Kart-Europameisterschaft und der Deutschen Kartmeisterschaft.
-            <br>
-            <br>1988
-            Sieger der Deutschen Formel-König-Meisterschaft und Zweiter in der Formel-Ford-1600-Europameisterschaft.
-            <br>
-            <br>1989
-            Schumacher fährt seine erste Formel 3-Saison im Team seines späteren Managers Willi Weber. Er kann zwei
-            Rennen gewinnen und beendet die Saison als Dritter im Gesamtklassement.
-            <br>
-            <br>1990
-            Sieg in der Formel 3-Meisterschaft. Schumacher nimmt außerdem im Juniorenteam von Mercedes-Benz an der
-            Gruppe C-Weltmeisterschaft teil und wird Fünfter in der Gesamtwertung.
-            <br>
-            <br>1991
-            25. August: Schumacher fährt sein erstes Formel 1- Rennen in Spa-Francochamps (Belgien) in einem Jordan. Er
-            kann sich als Siebter qualifizieren, scheidet im Rennen allerdings nach wenigen Runden wegen technischer
-            Probleme aus. Unmittelbar nach dem Rennen wird er von Benetton-Renault verpflichtet und fährt die restliche
-            Saison für dieses Team. Er belegt Rang 12 in der Gesamtwertung.
-            <br>
-            <br>1992
-            In seiner ersten kompletten Formel 1-Saison kann Schumacher in Spa seinen ersten Sieg in der Formel 1
-            feiern: Er gewinnt vor Nigel Mansell, der zu diesem Zeitpunkt schon Weltmeister ist. Insgesamt wird
-            Schumacher in dieser Saison Dritter.
-            <br>
-            <br>1993
-            26. September: Schumacher siegt in Estoril (Portugal) vor Weltmeister Alain Prost und beendet die Saison als
-            Gesamtvierter.
-            <br>
-            <br>1994
-            1. Mai: Ayrton Senna, der große Favorit für den WM-Titel 1994, stirbt im Rennen von Imola (San Marino). Es
-            entwickelt sich daraufhin ein erbitterter Zweikampf zwischen Sennas Teamkollegen Damon Hill und Michael
-            Schumacher. Seinen Höhepunkt findet dieser Wettstreit im letzten Rennen der Saison, als beide Fahrer nach
-            einer Kollision ausscheiden und Schumacher mit einem Punkt Vorsprung die Weltmeisterschaft für sich
-            entscheiden kann.
-            <br>
-            <br>1995
-            5. August: Heirat mit Corinna Betsch. In der Formel 1 kann Schumacher wiederum den Weltmeistertitel erlangen
-            und wird somit der jüngste Doppelweltmeister der Formel 1. Er wird Sonderbotschafter "Sport und Erziehung"
-            der UNESCO.
-            <br>
-            <br>1996
-            Vor dem Beginn der Formel 1-Saison wechselt Schumacher von Benetton zu Ferrari mit dem Ziel, das
-            traditionsreiche Team wieder siegfähig zu machen. Trotz vieler technisch bedingter Ausfälle kann er immerhin
-            drei Rennen (Spanien, Belgien und Italien) für sich entscheiden und beendet die Saison als Dritter.
-            <br>
-            <br>1997
-            20. Februar: Seine Tochter Gina-Maria wird geboren.
-            <br>
-            In seiner zweiten Saison für Ferrari kämpft Schumacher um den WM-Titel. Im letzten Rennen rammt er jedoch
-            bei einem Überholversuch Jacques Villeneuve, seinen härtesten Gegner, und scheidet aus. Villeneuve kann
-            weiterfahren und wird Weltmeister. Wegen seiner Aktion gegen Villeneuve werden Schumacher nachträglich alle
-            seine 1997 errungenen Punkte und sein Vizeweltmeistertitel aberkannt.
-            <br>
-            <br>1998
-            Schumacher wird hinter Mika Häkkinen Vizeweltmeister der Formel 1.
-            <br>
-            <br>1999
-            22. März: Geburt seines Sohnes Mick. In der Formel 1 sieht alles wieder nach einem Zweikampf zwischen
-            Häkkinen und Schumacher aus, bis Schumacher in Silverstone (England) mit über 100km/h frontal in eine Mauer
-            rast und sich das rechte Schien- und Wadenbein bricht. Er beendet die Saison auf Platz Fünf.
-            <br>
-            <br>2000
-            Schumacher wird zum ersten Mal Weltmeister mit Ferrari. Seit 1979 konnte das Rennsportunternehmen erstmals
-            wieder den Fahrertitel erringen.
-            <br>
-            <br> 2001
-            In dieser Saison sichert sich Schumacher schon vor dem fünften Rennen vor Schluss den WM-Titel. Er kann
-            außerdem die Bestmarke von neun Siegen in einer Saison (Nigel Mansell, 1992) erreichen.
-            <br>
-            <br>2002
-            Schumacher wird bereits im siebten Rennen vor Saisonende zum fünften Mal Formel 1-Weltmeister. Mit 144
-            Punkten holt er so viele Punkte in einer Saison wie noch niemand zuvor.
-            <br>
-            <br>2003
-            20. April: Seine Mutter Elisabeth stirbt. Zu Beginn der Saison wird ein neues Punktesystem eingeführt: Für
-            Platz Eins erhalten die Fahrer nun acht Punkte. Schumacher gewinnt daraufhin den Titel erst im letzten
-            Rennen. Es ist seine sechste Weltmeisterschaft mit zwei Punkten Vorsprung vor Kimi Räikkönen.
-            <br>
-            <br>2004
-            Mitte des Jahres hat er bereits zehn von elf Rennen gewonnen. Er beendet die Saison mit seiner siebten
-            Weltmeisterschaft. Nach fünf WM-Titeln in Folge und sieben WM-Titeln insgesamt ist er der erfolgreichste
-            Formel 1-Pilot aller Zeiten.
-            <br>
-            <br>2005
-            Die Saison endet für Schumacher auf Rang 3. Er erzielt jedoch nur einen einzigen Grand-Prix-Sieg.
-            <br>
-            <br>2006
-            Schumacher leiht dem Pixar-Animationsfilm "Cars" seine Stimme für den Ferrari F430, sowoh in der englischen
-            als auch in der deutschen Fassung.
-            <br>
-            <br>22.10. Schumacher fährt das letzte Rennen für Ferrari und zieht sich aus der Formel 1 zurück. Er beendet
-            die Saison auf Platz 2 der WM-Wertung.
-            <br>
-            <br>2007
-            In der Realverfilmung des Comics "Asterix bei den Olympischen Spielen" spielt Schumacher die Rolle des
-            schnellen Germanen "Schumix", eines Pferdewagen-Rennfahrers.
-            <br>
-            Sein Bruder Ralf beendet nach 10 Jahren seine Formel-1-Karriere und wechselt zur DTM.
-            <br>
-            <br>2008
-            20.3. Schumacher nimmt als Amateur an einer sogenannten Motorrad-Racing-for-Fun-Veranstaltung teil. Er
-            landet auf Anhieb auf Platz 3. Im Verlauf des Jahres nimmt er an neun Rennen der Superbike-Klasse der
-            Internationalen Deutschen Motorradmeisterschaft für das Team Holzhauer Racing Promotion teil.
-            <br>
-            <br>2009
-            23.12. Nachdem es zuvor schon Gerüchte gegeben hatte, verkündet das neue Mercedes AMG Petronas F1 Team, dass
-            Schumacher einen Dreijahresvertrag unterschrieben habe und somit in die Formel 1 zurückkehren werde.
-            <br>
-            <br>2010
-            Rückkehr in die Formel 1: Aufgrund technischer Schwierigkeiten mit dem Auto gestaltet sich die
-            Comeback-Saison für Schumacher unerwartet schwierig. Sie endet mit Platz 9 der WM-Gesamtwertung. Für 2012
-            kündigt er an, den Titel gewinnen zu wollen. Schumachers Pressesprecherin Sabine Kehm wird seine neue
-            Managerin und somit die Nachfolgerin Willi Webers.
-            <br>
-            2011
-            Auch die Saison 2011 beginnt enttäuschend für Schumacher und Mercedes. Es mehren sich Gerüchte, dass er
-            bereits Ende 2011 zurücktreten werde. Die Gerüchte stimmen nicht. Am Saison-Ende ist er 8. der
-            Weltrangliste.
-            <br>
-            <br>2012
-            Die starke Defektanfälligkeit seines Wagens bremst Schumachers Ambitionen auch 2012 aus.
-            <br>
-            4.10. In Suzuka (Japan) erklärt Schumacher seinen endgültigen Rücktritt von der Formel 1. Seine letzte
-            Saison endet für ihn auf Platz 13 der WM-Wertung.
-            <br>
-            <br>2013
-            29.12. Schumacher stürzt beim Skifahren in den französischen Alpen schwer und prallt mit dem Kopf an einen
-            Felsen. Er erleidet ein schweres Schädel-Hirn-Trauma und wird in der Intensivstation der Klinik in Grenoble
-            (F) ins künstliche Koma versetzt. Sein kritischer Zustand löst großen Medienrummel aus.
-            <br>
-            <br>2014
-            16. Juni: Seine Pressesprecherin und Managerin Sabine Kehm gibt bekannt, dass Schumacher nicht mehr im Koma
-            liege und die Klinik in Grenoble verlassen habe. Zunächst kommt er zur Rehabilitation in die Uniklinik in
-            Lausanne (CH).
-            <br>
-            September: Schumacher verlässt die Klinik in Lausanne und setzt seine Rehabilitation zu Hause fort.
-            <br>
-            November: Ein Jahr nach seinem Unfall erklärt seine Managerin, Schumacher mache Fortschritte, die der
-            Schwere seiner Verletzung angemessen seien.
-            <br>
-            Schumacher erhält den Millennium-Bambi. Formel-1-Weltmeister Sebastian Vettel hält die Laudatio.
-            <br>
-            <br>2016
-            15. Februar: Eröffnung der Ausstellung "Michael Schumacher – Der Rekordweltmeister" in Marburg an der Lahn,
-            die bis 2018 laufen soll.
-            <br>
-            Mai: 25 Jahre nach seinem Debüt in der Formel 1 bekommt Schumacher den Lebenswerk-Preis des Nürburgrings
-            verliehen.
-            <br>
-            <br>2017
-            Schumacher wird in die von der Stiftung Deutsche Sporthilfe initiierte Hall of Fame des deutschen Sports
-            aufgenommen. Über seinen Gesundheitszustand ist nichts bekannt.
-        </p>
-    </div>
-</template>
-<template id="albumTemplate" class="style_content">
-    <div class="style_content">
-        <h3>Album</h3>
-        <p>Das ist der Album Bereich</p>
-        <a href="#img1">
-            <img src="https://cdn-2.motorsport.com/static/img/amp/900000/950000/958000/958900/958904/s6_5718703/f1-european-gp-2001-michael-schumacher-5718703.jpg"
-                 class="thumbnail">
-        </a>
-        <a href="#img2">
-            <img src="https://www.augsburger-allgemeine.de/img/sonstige-sportarten/crop42482886/4599567046-cv16_9-w940/Michael-Schumacher-holte-1994-im-Benetton-Ford-B-194-5-seinen-ersten-Weltmeistertitel.jpg"
-                 class="thumbnail">
-        </a>
-        <a href="#img3">
-            <img src="http://www.spox.com/de/sport/formel1/1102/Bilder/michael-schumacher-testfahrten-jerez-514.jpg"
-                 class="thumbnail">
-        </a>
-        <a href="#_" class="lightbox" id="img1">
-            <img src="https://cdn-2.motorsport.com/static/img/amp/900000/950000/958000/958900/958904/s6_5718703/f1-european-gp-2001-michael-schumacher-5718703.jpg"
-                 alt="Schumacher Ferrari">
-        </a>
-        <a href="#_" class="lightbox" id="img2">
-            <img src="https://www.augsburger-allgemeine.de/img/sonstige-sportarten/crop42482886/4599567046-cv16_9-w940/Michael-Schumacher-holte-1994-im-Benetton-Ford-B-194-5-seinen-ersten-Weltmeistertitel.jpg"
-                 alt="Schumacher Benetton">
-        </a>
-        <a href="#_" class="lightbox" id="img3">
-            <img src="http://www.spox.com/de/sport/formel1/1102/Bilder/michael-schumacher-testfahrten-jerez-514.jpg"
-                 alt="Schumacher Mercedes">
-        </a>
-
-    </div>
-</template>
-<template id="accidentTemplate" class="style_content">
-    <div class="style_content">
-        <h3>Unfall</h3>
-        <p>Das ist der Unfall Bereich</p>
-        <br>Am 29. Dezember 2013 stürzte Schumacher beim Skifahren im französischen Méribel und prallte mit dem Kopf
-        gegen einen Felsen, wobei er ein Schädel-Hirn-Trauma erlitt.[88][89] Den Ermittlungen der Staatsanwaltschaft
-        zufolge, die u. a. die Aufnahmen seiner Helmkamera auswertete, fuhr er einige Meter neben der markierten Piste,
-        aber nicht mit überhöhter Geschwindigkeit.[90] Schumachers Zustand war anschließend kritisch; er wurde in ein
-        sogenanntes künstliches Koma versetzt.[91] Nach rascher Notfallrettung wurde er im Universitätsklinikum in
-        Grenoble behandelt; Anfang April 2014 zeigte er „Momente des Bewusstseins und des Erwachens“.[92] Am 16. Juni
-        2014 teilte seine Managerin Sabine Kehm mit, dass Schumacher nicht mehr im Koma liege und das Krankenhaus in
-        Grenoble verlassen habe, um „seine lange Phase der Rehabilitation fortzusetzen“.[93] Dazu war er zunächst im
-        Universitätsspital des Kantons Waadt in Lausanne untergebracht.[94] Seit September 2014 setzt er seine
-        Rehabilitation zu Hause fort.[95] Seitdem wurden keine offiziellen Angaben mehr zu seinem Gesundheitszustand
-        gemacht.[96][97] Im November 2018 machte Erzbischof Georg Gänswein Details zu einem Besuch im Haus der Familie
-        Schumacher im Jahr 2016 publik und schilderte Eindrücke, die er von Michael Schumacher hatte.
-    </div>
-</template>
-<!-- site contactform -->
-<template id="contactTemplate" class="style_content">
-    <div class="style_content">
-        <h3>Kontakt</h3>
-        <p>Um uns eine Nachricht zu schicken, füllen Sie einfach alle mit (*)
-            markierten Felder aus und klicken Sie auf "Absenden".</p>
-        <form id="Kontaktformular" name="Kontaktformular" action="">
-            <section class="contactform">
-                <div>
-                    <label for="name">Vorname: (*)</label><br>
-                    <input type="text" id="name" required name="firstname"
-                           placeholder="Bitte gebe deinen Vornamen ein.">
-                </div>
-                <div>
-                    <label for="secondname">Nachname: (*)</label><br>
-                    <input type="text" id="secondname" required name="secondname"
-                           placeholder="Bitte gebe deinen Nachnamen ein.">
-                </div>
-                <div>
-                    <label for="country">Land: (*)</label><br>
-                    <select id="country" required name="country">
-                        <option value="Österreich">Österreich</option>
-                        <option value="Deutschland">Deutschland</option>
-                        <option value="Schweiz">Schweiz</option>
-                        <option value="Andere">Andere</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="email">E-Mail: (*)</label><br>
-                    <input type="email" id="email" required name="email"
-                           placeholder="Bitte gebe deine E-Mail Adresse ein.">
-                </div>
-                <div>
-                    <label for="telnumber">Telefonnummer: (*)</label><br>
-                    <input type="tel" id="telnumber" required name="telnumber"
-                           placeholder="Bitte gebe deine Telefonnummer ein.">
-                </div>
-                <div>
-                    <br><label for="message">Nachricht:</label><br><br>
-                    <textarea required name="message" id="message" rows="15" cols="60"
-                              placeholder="Deine Nachricht an uns ..."></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Absenden">
-                    <input type="reset">
-                </div>
-            </section>
-        </form>
-    </div>
-</template>
+    </template>
+    <!-- site contactform -->
+    <template id="contactTemplate" class="style_content">
+        <div class="style_content">
+            <h3>Kontakt</h3>
+            <p>Um uns eine Nachricht zu schicken, füllen Sie einfach alle mit (*)
+                markierten Felder aus und klicken Sie auf "Absenden".</p>
+            <form id="Kontaktformular" name="Kontaktformular" action="">
+                <section class="contactform">
+                    <div>
+                        <label for="name">Vorname: (*)</label><br>
+                        <input type="text" id="name" required name="firstname" placeholder="Bitte gebe deinen Vornamen ein.">
+                    </div>
+                    <div>
+                        <label for="secondname">Nachname: (*)</label><br>
+                        <input type="text" id="secondname" required name="secondname" placeholder="Bitte gebe deinen Nachnamen ein.">
+                    </div>
+                    <div>
+                        <label for="country">Land: (*)</label><br>
+                        <select id="country" required name="country">
+                            <option value="Österreich">Österreich</option>
+                            <option value="Deutschland">Deutschland</option>
+                            <option value="Schweiz">Schweiz</option>
+                            <option value="Andere">Andere</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail: (*)</label><br>
+                        <input type="email" id="email" required name="email" placeholder="Bitte gebe deine E-Mail Adresse ein.">
+                    </div>
+                    <div>
+                        <label for="telnumber">Telefonnummer: (*)</label><br>
+                        <input type="tel" id="telnumber" required name="telnumber" placeholder="Bitte gebe deine Telefonnummer ein.">
+                    </div>
+                    <div>
+                        <br><label for="message">Nachricht:</label><br><br>
+                        <textarea required name="message" id="message" rows="15" cols="60" placeholder="Deine Nachricht an uns ..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Absenden">
+                        <input type="reset">
+                    </div>
+                </section>
+            </form>
+        </div>
+    </template>
+    <template id="AGBTemplate" class="style_content">
+        <div class="style_content">
+            <h3>AGB</h3>
+            <br>Das ist der AGB Bereich!
+        </div>
+    </template>
+    <template id="privacyTemplate" class="style_content">
+        <div class="style_content">
+            <h3>Datenschutz</h3>
+            <br>Da diese Webseite ausschließlich für eine Projektarbeit erstellt wurde und in keinster Weise Interesse
+            darin besteht, diese Webseite zu veröffentlichen. Wurden beim kopieren der Texte und Bilder keine
+            Urheberrechte verletzt. ;)
+        </div>
+    </template>
+    <template id="referenceTemplate" class="style_content">
+        <div class="style_content">
+            <h3>Quellenangabe</h3>
+            <p>Texte und Inhalt: <br>Wikipedia<br>autozeitung.de<br>news.at
+            </p>
+            <p>Bilder: <br>Bildsuche<br>
+            </p>
+        </div>
+    </template>
 </body>
+
 </html>
