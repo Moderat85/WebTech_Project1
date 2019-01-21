@@ -1,7 +1,7 @@
 "use strict";
 
 function templatesAreSupported() {
-    if ('content' in document.createElement('template')) {
+    if ("content" in document.createElement("template")) {
         return true;
     }
 
